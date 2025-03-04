@@ -1,0 +1,51 @@
+.bdabout {
+    font-family: Arial, sans-serif;
+    /* background: url(https://c0.wallpaperflare.com/preview/926/723/772/black-dodge-challenger-vehicle.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+    margin: 90px auto 0;
+}
+.containerabout {
+    margin: 90px auto 0;
+
+    text-align: center;
+    background: rgb(63, 62, 62);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-card {
+    padding: 20px;
+    background-color: aliceblue;
+    color: rgb(19, 18, 18);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.about-card:hover {
+    transform: scale(1.05);
+}
+.h2about {
+    margin: 0 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.paraabout {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navabout{
+    margin-top: 6px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bdabout::-webkit-scrollbar {
+    display: none; 
+}
