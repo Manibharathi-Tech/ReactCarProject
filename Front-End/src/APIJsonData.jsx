@@ -34,7 +34,6 @@ function APIJsonData() {
             alert("Data Not Added")
         });
 
-
     }
 
 

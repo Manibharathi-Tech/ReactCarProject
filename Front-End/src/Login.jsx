@@ -73,12 +73,12 @@ function Login() {
         </div>
         <div className="login-box">
           <h2 style={{ color: "white", fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", fontSize: "35px",marginLeft:"80px" }}>Member Login</h2>
-          <pre> <label >UserName</label><input type="text" placeholder="Username" onChange={(e) => { setusernamestate(e.target.value) }} /></pre>
+          <pre> <label >UserName</label><input className='inputl' type="text" placeholder="Username" onChange={(e) => { setusernamestate(e.target.value) }} /></pre>
           <div>
-            <pre><label >Password</label> <input type="password" id="password" placeholder="Password" onChange={(e) => { setpasswordstate(e.target.value) }} /></pre>
+            <pre><label >Password</label> <input className='inputl' type="password" id="password" placeholder="Password" onChange={(e) => { setpasswordstate(e.target.value) }} /></pre>
           </div>
 
-          <button  style={{background:"rgb(104, 154, 208)"}} onClick={() => { fnpost()}}>Login</button>
+          <button  style={{marginLeft:"90px"}} onClick={() => { fnpost()}}>Login</button>
           <p style={{ marginTop: "30px",marginLeft:"50px"}}>
             Don't have an account? <Link style={{ color: "rgb(72, 148, 255)", textDecoration: "underline" }} to="/Signup" >SignUp</Link>
           </p>

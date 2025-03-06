@@ -1,11 +1,12 @@
 .inner {
+  background: rgb(183, 177, 177);
   background-size: cover;
   background-position: center;
-  padding: 40px;
-  margin-top: 2px;
+  /* padding: 40px; */
+  /* margin-top: 2px; */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  /* border: 2px solid black; */
   height: 600px;
+  border: 5px solid white;
 }
 
 h1 {
@@ -22,7 +23,9 @@ h1 {
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 500px;
+  height: 450px;
+  width: 400px;
+  margin-left:50px;
 }
 
 .con1 h3 {
@@ -61,6 +64,8 @@ select {
   background-color: white;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  width: 350px;
+  margin-left: 20px;
 }
 
 select:hover {
@@ -77,6 +82,7 @@ button {
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 button:disabled {
@@ -105,11 +111,15 @@ button:hover{
   background-image: url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/colors/cl-00-teaser-hd.jpg?imwidth=1280" alt="" ');
   background-size: cover;
   background-position: center;
-  animation: changeImage 8s infinite;
+  animation: changeImage 20s infinite;
 }
 
 @keyframes changeImage {
-  0% { background-image: url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/colors/cl-00-teaser-hd.jpg?imwidth=1280" alt="" '); }
-  50% { background-image: url('https://assets.volkswagen.com/is/image/volkswagenag/new-banners-140225?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTE5MjAmaGVpPTEwODAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmM2E1Nw== '); }
-  100% { background-image: url('https://media.audi.com/is/image/audi/country/in/en/assets/home/226624AudiRSQ8LaunchKV1920x1080.jpg?width=1920'); }
+  0% { background-image: url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/colors/cl-00-teaser-hd.jpg?imwidth=1280" '); }
+  30% { background-image: url('https://assets.volkswagen.com/is/image/volkswagenag/new-banners-140225?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTE5MjAmaGVpPTEwODAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmM2E1Nw== '); }
+  60% { background-image: url('https://media.audi.com/is/image/audi/country/in/en/assets/home/226624AudiRSQ8LaunchKV1920x1080.jpg?width=1920'); }
+  100% { background-image: url('https://c4.wallpaperflare.com/wallpaper/311/539/664/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg'); }
 }
+
+
+

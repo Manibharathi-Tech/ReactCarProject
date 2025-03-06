@@ -68,13 +68,13 @@ function Signup() {
           <p><i>Join NitroWheels and unlock the ultimate driving experience. Sign up now to embrace the thrill, feel the power, and race beyond boundaries!  </i></p>
         </div>
         <div className="login-box1">
-          <h2 style={{ color: "white", fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", fontSize: "35px" }}>Create Account</h2>
-          <pre> <label >UserName</label><input type="text" placeholder="Username" onChange={(e)=>{setusernamestate(e.target.value)}}  /></pre>
+          <h2 style={{ color: "white", fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", fontSize: "35px",marginLeft:"80px" }}>Create Account</h2>
+          <pre> <label >UserName</label><input className='inputs' type="text" placeholder="Username" onChange={(e)=>{setusernamestate(e.target.value)}}  /></pre>
           <div>
-            <pre><label >Password</label> <input type="password" id="password" placeholder="Password" onChange={(e)=>{setpasswordstate(e.target.value)}} /></pre>
+            <pre><label >Password</label> <input className='inputs' type="password" id="password" placeholder="Password" onChange={(e)=>{setpasswordstate(e.target.value)}} /></pre>
           </div>
 
-          <button onClick={()=>{fnpost()}}>SignUp</button>
+          <button style={{marginLeft:"90px"}} onClick={()=>{fnpost()}}>SignUp</button>
           <p style={{ marginTop: "30px",marginLeft:"50px"}}>
           Already have an account?
           

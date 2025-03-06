@@ -10,6 +10,7 @@ function Navb() {
         <ul>
             <Link to="/LandPage">Home</Link>
             {/* <Link to="/CDP">ExploreRides</Link> */}
+            <Link to={"/wishlist"}>Wishlist</Link>
             <Link to="/About">About Us</Link>
             <Link to="/">Logout</Link>
         </ul>

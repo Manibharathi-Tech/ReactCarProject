@@ -1,6 +1,6 @@
 .card {
     height: 450px;
-    width: 30%;
+    width: 26%;
     background: #ebe9e9;
     border-radius: 8px;
     padding: 15px;
@@ -19,7 +19,6 @@
 
 .card img {
     width: 400px;
-    height: auto;
     border-radius: 8px;
     height: 280px;
 }

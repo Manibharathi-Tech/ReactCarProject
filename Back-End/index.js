@@ -4,6 +4,7 @@ const url = 'mongodb://localhost:27017'
 const dbName = "CARS"
 let db;
 
+
 //! API PROVIDER
 const express = require("express")
 const path = require("path")
@@ -71,6 +72,8 @@ app.post("/Login", async (req, res) => {
         res.status(404).json({ error: "server problem" });
     }
 
+
+
 });
 
 //!SignUp API
@@ -124,7 +127,7 @@ app.post("/Loadjsondata", async (req, res) => {
 
         collection.insertMany(carsdata);  // storing the data in MongoDB
 
-        res.status(201).json({ message: "Cars added successfully" });
+        res.status(200).json({ message: "Cars added successfully" });
 
     } catch (error) {
         console.error("Login Error:", error);
@@ -137,19 +140,83 @@ app.post("/Loadjsondata", async (req, res) => {
 //! Fetching data from the database
 
 app.get("/cars", async (req, res) => {
+
+
     try {
 
         const collection = db.collection("carsjson");  // collection name
 
-      const cars = await collection.find().toArray();  // the data fetched from the database
+        const cars = await collection.find().toArray();  // the data fetched from the database
 
-      res.status(200).json(cars);
+        res.status(200).json(cars);
 
     } catch (err) {
-      res.status(404).json({ message: "cars Not fetching " });
+        res.status(404).json({ message: "cars Not fetching " });
     }
-  });
 
+});
+
+
+//!-----------------------------
+
+//! Get The data From the Whislist collection
+
+app.get("/wishlist", async (req, res) => {
+    try {
+        if (!db) {
+            return res.status(500).json({ error: "Database not connected" });
+        }
+
+        const collection = db.collection("wishlist"); // collection name
+        const wishlist = await collection.find().toArray();
+
+        res.status(200).json(wishlist);
+    } catch (error) {
+
+        res.status(500).json({ error: "Failed to fetch wishlist items" });
+    }
+});
+
+//! Add a specific car to wishlist
+app.post("/wishlist", async (req, res) => {
+    try {
+        if (!db) {
+            return res.status(500).json({ error: "Database not connected" });
+        }
+
+        const collection = db.collection("wishlist"); //  collection name
+        const car = req.body;
+
+        // Check if the car is already in the wishlist
+        const existingCar = await collection.findOne({ _id: car._id });
+        if (existingCar) {
+            return res.status(400).json({ message:"Car already in wishlist" });
+        }
+
+        await collection.insertOne(car);
+        res.status(200).json({ message:"Added to wishlist"});
+        
+    } catch (error) {
+        res.status(500).json({ error:"Failed to add to wishlist" });
+    }
+});
+
+//!  Remove a car from wishlist
+app.delete("/wishlist/:id", async (req, res) => {
+    try {
+        if (!db) {
+            return res.status(500).json({ error: "Database not connected" });
+        }
+
+        const { id } = req.params;
+        const collection = db.collection("wishlist"); //  Correct collection reference
+
+        await collection.deleteOne({ _id: id }); // Fix deletion logic
+        res.status(200).json({ message: "Item removed from wishlist" });
+    } catch (error) {
+        res.status(500).json({ error: "Failed to remove item" });
+    }
+});
 
 
 

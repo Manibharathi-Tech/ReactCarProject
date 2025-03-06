@@ -35,7 +35,7 @@
 .paraabout {
     font-size: 20px;
     line-height: 1.5;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .navabout{

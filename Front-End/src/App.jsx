@@ -13,7 +13,7 @@ function App() {
   let picture = {
     "image1": "https://media.gettyimages.com/id/82719864/photo/man-filling-car-with-diesel-pump.jpg?s=1024x1024&w=gi&k=20&c=MbFK4lonlig5sReLHISxUNbbzL3WArQJqiiKorP_QZk=",
     "image2": "https://files.oaiusercontent.com/file-18ps164axT1oj4F5P2NmXe?se=2025-03-01T13%3A13%3A08Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D742c6105-c430-4905-849d-9f497e1a8c89.webp&sig=lDjy9WyfsXq3nMyoIgq8jbO4i6jQRJZsZ6kL5UD0s/o%3D",
-    "image3": "https://files.oaiusercontent.com/file-AFcDTKLNnk3PzJ7KLanvMF?se=2025-03-01T13%3A26%3A25Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D58f60b96-2430-4e37-85b3-b85fac2d4ca8.webp&sig=OKCNsz5iDbrkCvK%2BYsdfE0e9550booe922/OnYoW9s0%3D"
+    "image3": "https://i.pinimg.com/736x/13/60/99/1360990586fc583ee4aaf50345e2b636.jpg"
   }
 
 
@@ -129,7 +129,7 @@ function App() {
             <tbody>
               <tr>
                 <td>
-                  <h1 id='h1id'>Nitro-Wheels</h1>
+                  
                   <div className='con1' >
                     <h3 id='cdid'><i>Car Details</i></h3>
                     <form action="" id='f1' autoComplete='off'>
@@ -176,14 +176,19 @@ function App() {
                       ))}
 
                     </select><br />
-                    <button onClick={fncardata} disabled={!bstate}>Explore</button>
+                    <button style={{ marginTop: "60px" }} onClick={fncardata} disabled={!bstate}>Explore</button>
                   </div>
                 </td>
+
+                <td>
+                <img src="https://i.pinimg.com/736x/5c/56/7f/5c567f308bb36977bf9ad1ac349c103b.jpg" style={{height:"596px",width:"500px",marginLeft:"126px",border:"3px solid white"}} alt="" />
+                </td>
+
               </tr>
             </tbody>
           </table>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   )

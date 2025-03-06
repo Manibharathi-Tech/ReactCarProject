@@ -1,0 +1,59 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navabw {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.wishlist-container {
+    position: relative;
+    top: 80px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.wishlist-card {
+    height: 550px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 10px 0;
+}
+
+button {
+    color: white;
+   
+    border: none;
+    margin-top: 6px;
+    
+    cursor: pointer;
+}
+
+.footerw {
+    margin-top: 90px;
+    background-color: #f1f1f1; 
+    padding: 10px 0;
+    text-align: center;
+}

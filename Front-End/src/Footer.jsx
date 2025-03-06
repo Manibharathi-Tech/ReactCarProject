@@ -18,10 +18,10 @@ function Footer() {
           <div className="footer-section">
             <h6>Products</h6>
             <ul>
-              <li><a href="#">MDBootstrap</a></li>
-              <li><a href="#">MDWordPress</a></li>
-              <li><a href="#">BrandFlow</a></li>
-              <li><a href="#">Bootstrap Angular</a></li>
+              <li><a href="#">Sport Cars</a></li>
+              <li><a href="#">Luxuery Cars</a></li>
+              <li><a href="#">Top Branded Cars</a></li>
+              <li><a href="#">Eco Motor</a></li>
             </ul>
           </div>
 
@@ -37,10 +37,10 @@ function Footer() {
 
           <div className="footer-section">
             <h6>Contact</h6>
-            <p><i className="fas fa-home"></i> New York, NY 10012, US</p>
-            <p><i className="fas fa-envelope"></i> info@gmail.com</p>
-            <p><i className="fas fa-phone"></i> +01 234 567 88</p>
-            <p><i className="fas fa-print"></i> +01 234 567 89</p>
+            <p><i className="fas fa-home"></i> Chennai, CH 10012, INDIA</p>
+            <p><i className="fas fa-envelope"></i> nitrowheels@gmail.com</p>
+            <p><i className="fas fa-phone"></i> +91 902 243 3424</p>
+            <p><i className="fas fa-print"></i> +91 890 567 6754</p>
           </div>
         </div>
 
